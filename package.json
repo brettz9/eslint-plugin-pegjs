@@ -1,0 +1,35 @@
+{
+  "name": "eslint-plugin-pegjs",
+  "version": "0.0.0",
+  "description": "Linting for JavaScript blocks within PEG.js grammars",
+  "repository": "https://github.com/brettz9/eslint-plugin-pegjs",
+  "homepage": "https://github.com/brettz9/eslint-plugin-pegjs",
+  "bugs": "https://github.com/brettz9/eslint-plugin-pegjs/issues",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Brett Zamir",
+  "contributors": [],
+  "main": "lib/index.js",
+  "scripts": {
+    "install-rule-gen": "npm i -g generator-eslint yo",
+    "add-rule": "yo eslint:rule",
+    "build-pegjs": "pegjs -o pegjs.js ./node_modules/pegjs/src/parser.pegjs",
+    "test": "mocha --require chai/register-expect tests --recursive"
+  },
+  "dependencies": {
+    "pegjs": "^0.10.0",
+    "requireindex": "~1.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "~6.8.0",
+    "mocha": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
