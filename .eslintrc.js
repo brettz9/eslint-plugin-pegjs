@@ -1,17 +1,17 @@
 'use strict';
 module.exports = {
-  'env': {
-    'commonjs': true,
-    'es6': true,
-    'node': true
+  env: {
+    commonjs: true,
+    es6: true,
+    node: true
   },
-  'extends': 'eslint:recommended',
-  'globals': {
-    'Atomics': 'readonly',
-    'SharedArrayBuffer': 'readonly'
+  extends: 'eslint:recommended',
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly'
   },
-  'parserOptions': {
-    'ecmaVersion': 2018
+  parserOptions: {
+    ecmaVersion: 2018
   },
   overrides: [{
     files: 'tests/**',
@@ -22,9 +22,9 @@ module.exports = {
       expect: true
     }
   }],
-  'rules': {
+  rules: {
     strict: ['error'],
-    'indent': [
+    indent: [
       'error',
       2
     ],
@@ -32,11 +32,11 @@ module.exports = {
       'error',
       'unix'
     ],
-    'quotes': [
+    quotes: [
       'error',
       'single'
     ],
-    'semi': [
+    semi: [
       'error',
       'always'
     ]
